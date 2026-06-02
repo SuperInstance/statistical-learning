@@ -1,0 +1,16 @@
+[package]
+name = "statistical-learning"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SuperInstance/statistical-learning"
+description = "Statistical learning in Rust — regression, classification, clustering, cross-validation, feature selection"
+
+[dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+serde = { version = "1", features = ["derive"] }
+rand = "0.9"
+rand_distr = "0.5"
+
+[dev-dependencies]
+approx = "0.5"
